@@ -1,4 +1,6 @@
 body {
+
+	
 	margin: 0 auto; /* Remove any white space around the page */
 	background-color: ghostwhite;
 	font-family: "Cabin", sans-serif;
@@ -27,6 +29,7 @@ h2 {
 	object-fit: cover;
 	height: 1000px;
 	object-position: left;
+	
 }
 
 .main-container {
