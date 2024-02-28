@@ -1,0 +1,100 @@
+body {
+	margin: 0 auto; /* Remove any white space around the page */
+	background-color: ghostwhite;
+	font-family: "Cabin", sans-serif;
+	/*background: url("../images/smokey-bacon-restaurant.jpg") no-repeat;*/
+	/*background-size: cover;*/
+}
+
+h1 {
+	color: #aa2400;
+	font-family: serif;
+}
+
+h2 {
+	color: #bc7133;
+	/*font-family: sans-serif;*/
+}
+
+#header {
+	margin: 0;
+	padding: 0;
+}
+
+#main-image {
+	float: left;
+	width: 40%;
+	object-fit: cover;
+	height: 1000px;
+	object-position: left;
+}
+
+.main-container {
+	float: left;
+	width: 60%;
+}
+
+.contact-container {
+	padding: 50px;
+	float: left;
+	width: 50%;
+}
+
+.logo-container {
+	/*background: url("../images/smokey-bacon-restaurant.jpg") no-repeat;*/
+	/*width: 400px;*/
+	text-align: center;
+}
+.logo-container img {
+	margin: 100px;
+}
+
+
+footer {
+	padding: 50px;
+	background-color: red;
+}
+
+nav {
+	float: right;
+	margin-top: 0px;
+}
+nav a { /* Style nav buttons */
+	text-decoration: none;
+	font-size: 1.8em;
+	padding: 10px 50px;
+	/*background-color: white;*/
+	/*border-color: aquamarine;*/
+	/*border-radius: 15px;*/
+	border-style: solid;
+	border-width: 2px;
+	color: #aa2400;
+}
+nav a:hover {
+	background-color: #bc7133;
+	border-color: #bc7133;
+	color: ghostwhite;
+}
+
+.address-container {
+	/*float: left;*/
+}
+.exterior-container img { 
+	margin-bottom: 10px;
+	object-fit: cover; /* Crop image without distortion */
+	object-position: 0 30%;
+	height: 200px;
+	width: 600px;
+}
+/*.map-container {
+	height: 200px;
+	width: 200px;
+}*/
+
+.hours-container {
+	float: left;
+	/*margin-top: 300px;*/
+}
+.hours-container p {
+	margin: 3px 0;
+}
