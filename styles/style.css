@@ -1,0 +1,84 @@
+
+
+body {
+	margin: 0 auto; /* Remove any white space around the page */
+	background-color: ghostwhite;
+	font-family: "Cabin", sans-serif;
+}
+
+h1 {
+	color: #aa2400;
+	font-family: serif;
+}
+h2 {
+	color: #bc7133;
+	/*font-family: sans-serif;*/
+}
+
+#main-image {
+	float: left;
+	width: 40%;
+	height: 100vh; /* Full vertical length */
+	object-fit: cover; /* Crop the image without distortion */
+	object-position: left;
+}
+
+#main-container {
+	height: 100vh; /* Full vertical length */
+	overflow-y: auto; /* Scroll if content too long */
+}
+
+header {
+	text-align: center;
+}
+header img { /* logo */
+	padding: 30px;
+	width: 40%;
+}
+
+nav {
+	padding:30px;
+	background-color: ghostwhite;
+	text-align: center;
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+	top: 0;
+}
+nav a { /* Style nav buttons */
+	text-decoration: none;
+	font-size: 1.8em;
+	padding: 10px 50px;
+	border-style: solid;
+	border-width: 2px;
+	color: #aa2400;
+}
+nav a:hover {
+	background-color: #bc7133;
+	border-color: #bc7133;
+	color: ghostwhite;
+}
+
+.content {
+	margin: 25px auto;
+	width: 80%;
+	/*border-style: dotted;
+	border-width: 5px;
+	border-color: red;*/
+}
+
+/* Custom content */
+
+.address-container {
+	text-align: center;
+}
+.exterior-container img { 
+	margin-bottom: 10px;
+	object-fit: cover; /* Crop image without distortion */
+	object-position: 0 30%;
+	height: 200px;
+	width: 600px;
+}
+
+.hours-container p {
+	margin: 3px 0;
+}
