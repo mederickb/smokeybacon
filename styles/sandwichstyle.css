@@ -1,0 +1,61 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css?family=Atkinson+Hyperlegible');
+/*Body*/
+body {
+	background-color: #282A36;
+	color: white;
+	font-family: Atkinson Hyperlegible, Tahoma, sans-serif;
+	margin: 0;
+	/*fixes footer*/
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+p,h1,img {
+	padding: 0 10% 0 10%;
+	margin-bottom: 0;
+}
+img {
+	padding-top: 2rem;
+}
+/*Header and nav*/
+header {
+    background-color: #21222c;
+	/*top right bottom left*/
+	padding: 1rem 1rem 1rem 1.5rem; 
+	display: flex;
+	justify-content: center;
+}
+nav {
+	background-color: #191a21;
+	padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+nav a {
+	padding: 0.3rem 3% 0.3rem 3%;
+}
+header img {
+	padding: 0;
+	margin: 0;
+}
+/*Footer*/
+footer {
+    background-color: #21222c;
+	color: #6070a0;
+	padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+	/*fixes footer*/
+	margin-top: auto;
+}
+footer p {
+	padding-bottom: 1rem;
+}
+/*Links*/
+a {
+	color: #8BE9FD;
+	text-decoration: none;
+}
+a:hover {
+	color: #b0f1ff;
+}
