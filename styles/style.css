@@ -106,8 +106,10 @@ nav a:hover {
 	text-align: left;
 }
 
-/* about.html */
+=======
+}
 
+/* about.html */
 #team-cards {
 	text-align: center;
 }
@@ -125,6 +127,7 @@ nav a:hover {
 	width: 150px;
 	filter: grayscale(100%);
 }
+
 #team-cards img:hover {
 	filter: grayscale(0%);
 }
