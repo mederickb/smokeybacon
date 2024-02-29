@@ -25,7 +25,7 @@ h2 {
 
 #main-container {
 	height: 100vh; /* Full vertical length */
-	overflow-y: auto; /* Scroll if content too long */
+	overflow-y: scroll; /* Scroll if content too long */
 }
 
 header {
