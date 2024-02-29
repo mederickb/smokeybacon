@@ -82,4 +82,25 @@ nav a:hover {
 
 .hours-container p {
 	margin: 3px 0;
+/* about.html */
+
+#team-cards {
+	text-align: center;
+}
+#team-cards div {
+	display: inline-block;
+	margin: 25px 15px;
+	vertical-align: top;
+	width: 200px;
+}
+#team-cards img {
+	border-radius: 100%;
+	object-fit: cover; /* Crop image without distortion */
+	object-position: center;
+	height: 150px;
+	width: 150px;
+	filter: grayscale(100%);
+}
+#team-cards img:hover {
+	filter: grayscale(0%);
 }
