@@ -10,11 +10,17 @@ body {
 h1 {
 	color: #aa2400;
 	font-family: serif;
+	font-size: 2.5em;
 }
 
 h2 {
+	font-size: 1.8em;
+}
+h5 {
+	font-style: italic;
+}
+h2, h4 {
 	color: #bc7133;
-	/*font-family: sans-serif;*/
 }
 
 #main-image {
@@ -28,20 +34,31 @@ h2 {
 }
 
 #main-container {
+<<<<<<< HEAD
 	height: 100vh;
 	/* Full vertical length */
 	overflow-y: auto;
 	/* Scroll if content too long */
+=======
+	height: 100vh; /* Full vertical length */
+	overflow-y: scroll; /* Scroll if content too long */
+>>>>>>> 9b25505aa98d2f422758618afab0b34f6ab60a94
 }
 
 header {
 	text-align: center;
 }
+<<<<<<< HEAD
 
 header img {
 	/* logo */
 	padding: 30px;
 	width: 40%;
+=======
+header img { /* logo */
+	padding: 15px;
+	width: 40vh;
+>>>>>>> 9b25505aa98d2f422758618afab0b34f6ab60a94
 }
 
 nav {
@@ -58,7 +75,7 @@ nav a {
 	/* Style nav buttons */
 	text-decoration: none;
 	font-size: 1.8em;
-	padding: 10px 50px;
+	padding: 1vh 2vh; /* size vs viewport */
 	border-style: solid;
 	border-width: 2px;
 	color: #aa2400;
@@ -80,6 +97,8 @@ nav a:hover {
 
 /* Custom content */
 
+/* index.html */
+
 .address-container {
 	text-align: center;
 	padding-top: 20px;
@@ -94,6 +113,51 @@ nav a:hover {
 	width: 600px;
 }
 
+<<<<<<< HEAD
 .hours-container p {
 	margin: 3px 0;
+=======
+/*.hours-container {
+	text-align: center;
+	width: 600px;
+	margin: 25px auto;
+}*/
+.hours-container h2 {
+	/*float:left;*/
+	padding: 15px;
+}
+.hours-container p {
+	margin: 0;
+	padding: 10px;
+	/*background-color: rgba(170,36,0, 0.75);*/
+	/*color: ghostwhite;*/
+	font-size: 1.3em;
+	text-align: left;
+}
+
+=======
+}
+
+/* about.html */
+#team-cards {
+	text-align: center;
+}
+#team-cards div {
+	display: inline-block;
+	margin: 25px 15px;
+	vertical-align: top;
+	width: 200px;
+}
+#team-cards img {
+	border-radius: 100%;
+	object-fit: cover; /* Crop image without distortion */
+	object-position: center;
+	height: 150px;
+	width: 150px;
+	filter: grayscale(100%);
+}
+
+#team-cards img:hover {
+	filter: grayscale(0%);
+>>>>>>> 9b25505aa98d2f422758618afab0b34f6ab60a94
 }
