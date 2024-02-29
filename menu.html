@@ -1,214 +1,296 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-.accordion {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  transition: 0.4s;
-}
-
-.active, .accordion:hover {
-  background-color: #ccc;
-}
-
-.panel {
-  padding: 0 18px;
-  background-color: white;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-}
-</style>
-<title>Menu</title>
-<meta charset="utf-8">
-<link rel="stylesheet" href="styles/style.css">
-<link rel="stylesheet" href="styles/modal.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Menu</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/modal.css">
 </head>
+
 <body>
-<img id="main-image" src="images/smokey-bacon-restaurant.jpg" alt="restaurant interior">
-<div id="main-container">
-<header>
-	<a href="index.html">
-		<img src="images/logo-v.png" alt="smokey bacon logo">
-	</a>
-</header>
-<nav>
-	<a href="menu.html">Menu</a>
-	<a href="#btn_top" data-toggle="modal" id="myBtn">Reservation</a>
-	<a href="about.html">About Us</a>
-</nav>
+    <img id="main-image" src="images/smokey-bacon-restaurant.jpg" alt="restaurant interior">
+    <div id="main-container">
+        <header>
+            <a href="index.html">
+                <img src="images/logo-v.png" alt="smokey bacon logo">
+            </a>
+        </header>
+        <nav>
+            <a href="menu.html">Menu</a>
+            <a href="#btn_top" data-toggle="modal" id="myBtn">Reservation</a>
+            <a href="about.html">About Us</a>
+        </nav>
 
-		<!-- The Modal -->
-		<div id="myModal" class="modal">
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
 
-			<!-- Modal content -->
-			<div class="modal-content">
-			<div class="modal-header">
-				<span class="close">&times;</span>
-				<h2>Reserve Your Seat</h2>
-			</div>
-			<div class="modal-body">
-				<p>Just Contact Us Directly To Make a Reservation. </p>
-				<p>Phone Number: (514) 00B-ACON</p>
-			</div>
-			<div class="modal-footer"></div>
-			</div>		
-		</div>
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>Reserve Your Seat</h2>
+                </div>
+                <div class="modal-body">
+                    <p>Just Contact Us Directly To Make a Reservation. </p>
+                    <p>Phone Number: (514) 00B-ACON</p>
+                </div>
+                <div class="modal-footer"></div>
+            </div>
+        </div>
 
-<div class="content">
-<!-- Start your content here -->
+        <div class="content">
+            <!-- Start your content here -->
 
+            <h1>Menu</h1>
+            <p>Powered by Bacon</p>
+            <hr>
+            <h2>Our Specialties</h2>
+            <div id="specialties">
+                <ul>
+                    <li>
+                        <img src="images/breakfast-sandwich.jpeg" alt="a breakfast sandwich">
+                        <h3>Breakfast Sandwich</h3>
+                        <p><a href="specialty/breakfast-sandwich.html">Details</a></p>
+                        <h4>16.99</h4>
+                    </li>
+                    <li>
+                        <img src="images/poutine-chichen-chorizo.jpg" alt="POUTINE">
+                        <h3>Poutine with Smoked Ancho Chicken and Chorizo, Beer Sauce</h3>
+                        <p><a href="specialty/poutine-chichen-chorizo.html">Details</a></p>
+                        <h4>13.99</h4>
+                    </li>
+                    <li>
+                        <img src="images/bacon-wrapped-chicken.jpg" alt="Bacon Wrapped Chicken">
+                        <h3>Chicken Wrapped in Bacon</h3>
+                        <p><a href="specialty/bacon-wrapped-chicken.html">Details</a></p>
+                        <h4>13.99</h4>
+                    </li>
+                    <li>
+                        <img src="images/carbonara.jpg" alt="bacon carbonara pasta">
+                        <h3>Bacon Carbonara Pasta</h3>
+                        <p><a href="specialty/carbonara.html">Details</a></p>
+                        <h4>18.99</h4>
+                    </li>
+                    <li>
+                        <img src="images/spicy-margarita.jpg" alt="SPICY MARGARITA">
+                        <h3>Spicy Margarita</h3>
+                        <p><a href="specialty/spicy-margarita.html">Details</a></p>
+                        <h4>10.99</h4>
+                    </li>
+                </ul>
+            </div>
 
-<h1>Menu</h1>
-<p>Choose your category of food:</p>
+            <button class="accordion">SNACKS & APPETIZERS</button>
+            <div class="panel">
+                <ul>
+                    <li>
+                        <img src="images/a-1img.jpg" alt="dijon-bacon">
+                        <h3>Dijon-Bacon Dip For Pretzels</h3>
+                        <p>dijon mustard, crumbled cooked bacon, horseradish and pretzel crisps</p>
+                        <h4>5.69$</h4>
+                    </li>
+                    <li>
+                        <img src="images/a-2img.jpg" alt="blt-muffins">
+                        <h3>BLT Muffins</h3>
+                        <p>crumbled cooked bacon, chopped seeded plum tomatoes, fresh parsley, shredded lettuce</p>
+                        <h4>4.99$</h4>
+                    </li>
+                    <li>
+                        <img src="images/a-3img.jpg" alt="blt-twice-baked">
+                        <h3>BLT Twice-Baked Potatoes</h3>
+                        <p>potatoes, shredded cheddar cheese, bacon strips, cooked and crumbled, tomatoes, onion, lettuce, mayonnaise</p>
+                        <h4>7.89$</h4>
+                    </li>
+                    <li>
+                        <img src="images/a-4img.jpg" alt="bacon-cream-cheese">
+                        <h3>Bacon Cream Cheese Pinwheels</h3>
+                        <p>cream cheese, softened, onion, milk, bacon strips, crescent rolls</p>
+                        <h4>6.78$</h4>
+                    </li>
+                    <li>
+                        <img src="images/a-5img.jpg" alt="cornflake-coated-crispy">
+                        <h3>Cornflake-Coated Crispy Bacon</h3>
+                        <p>evaporated milk, ketchup, worcestershire sauce,, bacon strips, crushed cornflakes</p>
+                        <h4>5.89$</h4>
+                    </li>
+                </ul>
+            </div>
 
-<button class="accordion">OUR SPECIALTIES</button>
-<div class="panel">
-	<dl>
-		<dt>BREAKFAST SANDWICH			16.99</dt>
-			<dd><a href="specialty/breakfast-sandwich.html">Details</a></dd>
-		<dt>POUTINE WITH SMOKED ANCHO CHICKEN AND CHORIZO, BEER SAUCE			13.99</dt>
-			<dd><a href="specialty/poutine-chichen-chorizo.html">Details</a></dd>
-		<dt>CHICHEN WRAPPED IN BACON			13.99</dt>
-			<dd><a href="specialty/bacon-wrapped-chicken.html">Details</a></dd>
-		<dt>CARBONARA			20.99</dt>
-			<dd><a href="specialty/carbonara.html">Details</a></dd>
-		<dt>SPICY MARGARITA			10.99</dt>
-			<dd><a href="specialty/spicy-margarita.html">Details</a></dd>
-	</dl>
-</div>
+            <button class="accordion">SOUPS & SALADS</button>
+            <div class="panel">
+                <ul>
+                    <li>
+                        <img src="images/s-1img.jpg" alt="bacon_avocado">
+                        <h3>Bacon Avocado Salad</h3>
+                        <p>red wine vinegar, bacon strips, cooked and crumbled, ripe avocados, peeled and cubed, lemon juice, olive oil</p>
+                        <h4>6.99$</h4>
+                    </li>
+                    <li>
+                        <img src="images/s-2img.jpg" alt="bacon-potato">
+                        <h3>Bacon-Potato Corn Chowder</h3>
+                        <p>pound bacon strips, chopped, chopped onion, Yukon Gold potatoes, milk, cream-style corn</p>
+                        <h4>5.69$</h4>
+                    </li>
+                    <li>
+                        <img src="images/s-3img.jpg" alt="bacon_cheese">
+                        <h3>Crunchy Bacon Blue Cheese</h3>
+                        <p>pound bacon strips, chopped, chopped onion, Yukon Gold potatoes, milk, cream-style corn</p>
+                        <h4>7.65$</h4>
+                    </li>
+                    <li>
+                        <img src="images/s-4img.jpg" alt="crunchy_garden_salad">
+                        <h3>Crunchy Lemon-Pesto Garden Salad</h3>
+                        <p>Pesto, lemon juice, garlic salt, fresh peas, bacon strips, Parmesan cheese</p>
+                        <h4>6.79$</h4>
+                    </li>
+                    <li>
+                        <img src="images/s-5img.jpg" alt="bacon_beef_barley">
+                        <h3>Bacon-Beef Barley Soup</h3>
+                        <p>bacon strips, beef stew meat, red potatoes, onion, pearl barley, baby carrots, mashed potato, beef</p>
+                        <h4>8.67$</h4>
+                    </li>
+                </ul>
+            </div>
 
-<button class="accordion">SNACKS & APPETIZERS</button>
-<div class="panel">
-	<dl>
-		<dt>DIJON-BACON DIP FOR PRETZELS	        5.69</dt>
-			<dd><img src="images/a-1img.jpg" alt="dijon-bacon" width="500" height="333"></dd><dd>dijon mustard, crumbled cooked bacon, horseradish and pretzel crisps</dd>
-		<dt>BLT Muffins				4.99</dt>
-			<dd><img src="images/a-2img.jpg" alt="blt-muffins" width="500" height="333"></dd><dd>crumbled cooked bacon, chopped seeded plum tomatoes, fresh parsley, shredded lettuce</dd>
-		<dt>BLT TWICE-BAKED POTATOES			7.89</dt>
-			<dd><img src="images/a-3img.jpg" alt="blt-twice-baked" width="500" height="333"></dd><dd>potatoes, shredded cheddar cheese, bacon strips, cooked and crumbled, tomatoes, onion, lettuce, mayonnaise</dd>
-		<dt>BACON CREAM CHEESE PINWHEELS		6.78</dt>
-			<dd><img src="images/a-4img.jpg" alt="bacon-cream-cheese" width="500" height="333"></dd><dd>cream cheese, softened, onion, milk, bacon strips, crescent rolls</dd>
-		<dt>CORNFLAKE-COATED CRISPY BACON		5.89</dt>
-			<dd><img src="images/a-5img.jpg" alt="cornflake-coated-crispy" width="500" height="333"></dd><dd>evaporated milk, ketchup, worcestershire sauce,, bacon strips, crushed cornflakes</dd>
-	</dl>
-</div>
+            <button class="accordion">SANDWICHES</button>
+            <div class="panel">
+                <ul>
+                    <li>
+                        <img src="images/sd-1img.jpg" alt="grilled_cheese_bacon">
+                        <h3>Grilled Cheese Bacon and Tomato Sandwich</h3>
+                        <p>sourdough bread, cheddar cheese, gruyere cheese, onion powder, roasted tomatoes, glazed bacon, and mayonnaise</p>
+                        <h4>8.94$</h4>
+                    </li>
+                    <li>
+                        <img src="images/sd-2img.jpg" alt="bacon_sandwich">
+                        <h3>Bacon Sandwich with Caramelized Onions</h3>
+                        <p>chipotle mayonnaise, caramelized onions, tomatoes, arugula, bacon</p>
+                        <h4>9.69$</h4>
+                    </li>
+                    <li>
+                        <img src="images/sd-3img.jpg" alt="bacon_fish_sandwich">
+                        <h3>Bacon Fish Sandwich</h3>
+                        <p>black pepper, cooked bacon, tilapia fillets, tomato, lettuce</p>
+                        <h4>7.97$</h4>
+                    </li>
+                </ul>
+            </div>
 
-<button class="accordion">SOUPS & SALADS</button>
-<div class="panel">
-	<dl>
-		<dt>BACON AVOCADO SALAD			6.99</dt>
-			<dd><img src="images/s-1img.jpg" alt="bacon_avocado" width="500" height="333"></dd><dd>red wine vinegar, bacon strips, cooked and crumbled, ripe avocados, peeled and cubed, lemon juice, olive oil</dd>
-		<dt>BACON-POTATO CORN CHOWDER			5.69</dt>
-			<dd><img src="images/s-2img.jpg" alt="bacon-potato" width="500" height="333"></dd><dd>pound bacon strips, chopped, chopped onion, Yukon Gold potatoes, milk, cream-style corn</dd>
-		<dt>CRUNCHY BACON BLUE CHEESE			7.65</dt>
-			<dd><img src="images/s-3img.jpg" alt="bacon_cheese" width="500" height="333"></dd><dd>red onions, avocado oil, sweet red pepper, balsamic vinegar,, crumbled cooked bacon, salt</dd>
-		<dt>CRUNCHY LEMON-PESTO GARDEN SALAD		6.79</dt>
-			<dd><img src="images/s-4img.jpg" alt="crunchy_garden_salad" width="500" height="333"></dd><dd>Pesto, lemon juice, garlic salt, fresh peas, bacon strips,Parmesan cheese</dd>
-		<dt>BACON-BEEF BARLEY SOUP			8.67</dt>
-			<dd><img src="images/s-5img.jpg" alt="bacon_beef_barley" width="500" height="333"></dd><dd>bacon strips, beef stew meat, red potatoes, onion, pearl barley, baby carrots, mashed potato, beef</dd>
-	</dl>
-</div>
+            <button class="accordion">RICE AND PASTA</button>
+            <div class="panel">
+                <ul>
+                    <li>
+                        <img src="images/r-1img.jpg" alt="bacon_chiken">
+                        <h3>Bacon-Wrapped Stuffed Chicken</h3>
+                        <p>skinless chicken breast, spreadable chive and onion cream cheese, bacon strips, butter, brown rice</p>
+                        <h4>9.89$</h4>
+                    </li>
+                    <li>
+                        <img src="images/r-2img.jpg" alt="bacon_rice">
+                        <h3>Bacon with Rice</h3>
+                        <p>bacon, white onion, white rice, sesame oil, soy sauce, green onions, eggs</p>
+                        <h4>9.69$</h4>
+                    </li>
+                    <li>
+                        <img src="images/r-4img.jpg" alt="bacon_garlic_pasta">
+                        <h3>Garlic Bacon Pasta</h3>
+                        <p>crispy bacon, garlic, creamy sauce, red wine, Italian pasta</p>
+                        <h4>12.69$</h4>
+                    </li>
+                    <li>
+                        <img src="images/r-5img.jpg" alt="bacon_orzo">
+                        <h3>Orzo with Butternut Squash & Bacon</h3>
+                        <p>orzo pasta, bacon strips, chopped, butternut squash, frozen green beans, thawed, Parmesan cheese, garlic, pepper and salt</p>
+                        <h4>13.59$</h4>
+                    </li>
+                </ul>
+            </div>
 
-<button class="accordion">SANDWICHES</button>
-<div class="panel">
-	<dl>
-		<dt>GRILLED CHEESE BACON AND TOMATO SANDWICH 8.94</dt>
-			<dd><img src="images/sd-1img.jpg" alt="grilled_cheese_bacon" width="500" height="333"></dd><dd>sourdough bread, cheddar cheese, gruyere cheese, onion powder, roasted tomatoes, glazed bacon, and mayonnaise.</dd>
-		<dt>BACON SANDWICH WITH CARAMELIZED ONIONS	9.69</dt>
-			<dd><img src="images/sd-2img.jpg" alt="bacon_sandwich" width="500" height="333"></dd><dd>chipotle mayonnaise, caramelized onions, tomatoes, arugula, bacon</dd>
-		<dt>BACON FISH SANDWICH	7.97</dt>
-			<dd><img src="images/sd-3img.jpg" alt="bacon_fish_sandwich" width="500" height="333"></dd><dd>black pepper, cooked bacon, tilapia fillets, tomato, lettuce</dd>
-	</dl>
-</div>
+            <button class="accordion">DESSERTS</button>
+            <div class="panel">
+                <ul>
+                    <li>
+                        <img src="images/d-3img.jpg" alt="bacon_coffe_cake">
+                        <h3>Maple Bacon Walnut Coffee Cake</h3>
+                        <p>brown sugar, ground cinnamon, unsweetened applesauce, eggs, bacon strips, cooked and crumbled</p>
+                        <h4>8.59$</h4>
+                    </li>
+                    <li>
+                        <img src="images/d-1img.jpg" alt="bacon_wrapped_avocado">
+                        <h3>Bacon-Wrapped Avocado Wedges</h3>
+                        <p>ripe avocados, bacon strips, lime juice, Sriracha chili sauce</p>
+                        <h4>7.39$</h4>
+                    </li>
+                    <li>
+                        <img src="images/d-2img.jpg" alt="bacon_orange">
+                        <h3>Orange-Glazed Bacon</h3>
+                        <p>orange juice, honey, dijon mustard, ground ginger, acon strips</p>
+                        <h4>6.54$</h4>
+                    </li>
+                    <li>
+                        <img src="images/d-4img.jpg" alt="bacon_scallops">
+                        <h3>Bacon-Wrapped Scallops with Pear Sauce</h3>
+                        <p>pear preserves, bacon strips, reduced-sodium soy sauce, brown sugar, crushed red pepper flakes, sea scallops</p>
+                        <h4>6.49$</h4>
+                    </li>
+                    <li>
+                        <img src="images/d-5img.jpg" alt="bacon_parmesan_popovers">
+                        <h3>Bacon Parmesan Popovers</h3>
+                        <p>Parmesan cheese, bacon strips, diced, milk, eggs</p>
+                        <h4>5.68$</h4>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
-<button class="accordion">RICE AND PASTA</button>
-<div class="panel">
-	<dl>
-		<dt>BACON-WRAPPED STUFFED CHICKEN		9.89</dt>
-			<dd><img src="images/r-1img.jpg" alt="bacon_chiken" width="300" height="233"></dd><dd>skinless chicken breast, spreadable chive and onion cream cheese, bacon strips, butter,  brown rice</dd>
-		<dt>BACON WITH RICE		9.69</dt>
-			<dd><img src="images/r-2img.jpg" alt="bacon_rice" width="300" height="233"></dd><dd>bacon, white onion, white rice, sesame oil, soy sauce, green onions, eggs</dd>
-		<dt>BACON CARBONARA PASTA			11.19</dt>
-			<dd><img src="images/r-3img.jpg" alt="bacon_pasta" width="300" height="233"></dd><dd>italian classic with creamy sauce, crisp bacon, peas, & parmesan</dd>
-		<dt>GARLIC BACON PASTA		12.69</dt>
-			<dd><img src="images/r-4img.jpg" alt="bacon_garlic_pasta" width="300" height="233"></dd><dd>crispy bacon, garlic, creamy sauce, red wine, Italian pasta</dd>
-		<dt>ORZO WITH BUTTERNUT SQUASH & BACON		13.59</dt>
-			<dd><img src="images/r-5img.jpg" alt="bacon_orzo" width="300" height="233"></dd><dd>orzo pasta, bacon strips, chopped, butternut squash, frozen green beans, thawed, Parmesan cheese, garlic, pepper and salt</dd>
-	</dl>
-</div>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
 
-<button class="accordion">DESSERTS</button>
-<div class="panel">
-	<dl>
-		<dt>BACON-WRAPPED AVOCADO WEDGES		7.39</dt>
-			<dd><img src="images/d-1img.jpg" alt="bacon_wrapped_avocado" width="300" height="233"></dd><dd>ripe avocados, bacon strips, lime juice, Sriracha chili sauce</dd>
-		<dt>ORANGE-GLAZED BACON			6.54
-			<dd><img src="images/d-2img.jpg" alt="bacon_orange" width="300" height="233"></dd><dd>orange juice, honey, dijon mustard, ground ginger, acon strips</dd>
-		<dt>MAPLE BACON WALNUT COFFEE CAKE		8.59</dt>
-			<dd><img src="images/d-3img.jpg" alt="bacon_coffe_cake" width="300" height="233"></dd><dd>brown sugar, ground cinnamon, unsweetened applesauce, eggs, bacon strips, cooked and crumbled</dd>
-		<dt>BACON-WRAPPED SCALLOPS with PEAR SAUCE	6.49</dt>
-			<dd><img src="images/d-4img.jpg" alt="bacon_scallops" width="300" height="233"></dd><dd>pear preserves, bacon strips, reduced-sodium soy sauce, brown sugar, crushed red pepper flakes, sea scallops</dd>
-		<dt>BACON PARMESAN POPOVERS			5.68</dt>
-			<dd><img src="images/d-5img.jpg" alt="bacon_parmesan_popovers" width="300" height="233"></dd><dd>Parmesan cheese, bacon strips, diced, milk, eggs</dd>
-	</dl>
-</div>
-</div>
-</div>
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+    <!-- make a modal -->
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
 
-<script>
-var acc = document.getElementsByClassName("accordion");
-var i;
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-	this.classList.toggle("active");
-	var panel = this.nextElementSibling;
-	if (panel.style.maxHeight) {
-	  panel.style.maxHeight = null;
-	} else {
-	  panel.style.maxHeight = panel.scrollHeight + "px";
-	} 
-  });
-}
-</script>
-	<!-- make a modal -->
-	<script>
-		// Get the modal
-		var modal = document.getElementById("myModal");
-		
-		// Get the button that opens the modal
-		var btn = document.getElementById("myBtn");
-		
-		// Get the <span> element that closes the modal
-		var span = document.getElementsByClassName("close")[0];
-		
-		// When the user clicks the button, open the modal 
-		btn.onclick = function() {
-		  modal.style.display = "block";
-		}
-		
-		// When the user clicks on <span> (x), close the modal
-		span.onclick = function() {
-		  modal.style.display = "none";
-		}
-		
-		// When the user clicks anywhere outside of the modal, close it
-		window.onclick = function(event) {
-		  if (event.target == modal) {
-			modal.style.display = "none";
-		  }
-		}
-	</script>
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 
 </body>
+
 </html>
