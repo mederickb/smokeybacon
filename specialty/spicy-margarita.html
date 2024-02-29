@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>SPICY MARGARITA</title>
-        <link rel="stylesheet" href="../stylesheet.css">
+        <link rel="stylesheet" href="../styles/modal.css">
     </head>
     <body>
         <nav class="navbar">
@@ -17,13 +17,13 @@
         </nav>
 
         <div>
-        <img src="../images/spicy-margarita.jpg" alt="SPICY MARGARITA" width="480" height="640">
+        <img class="mainimg" src="../images/spicy-margarita.jpg" alt="SPICY MARGARITA" width="480" height="640" id="my-image">
         </div>
         <div>            
-            <p class="title">
-                SPICY MARGARITA    
-                <span class="showprice"> &nbsp; &nbsp; &nbsp;$10.99 </span>               
-            </p>
+            <h1>
+                SPICY MARGARITA
+            </h1>
+            <h2>$10.99</h2>
             
             <p class="description">                
                 A Spicy Margarita is a twist on the classic Margarita cocktail, adding a kick of heat to the refreshing mix of tequila, lime juice, and orange liqueur.
@@ -41,5 +41,12 @@
                 <a class="button" href="../menu.html">BACK TO MENU</a>
         </div>
         
+        <script>
+            window.onload = function() {
+                setTimeout(function() {
+                    document.getElementById('my-image').style.opacity = '100';
+                }, 500);
+            };
+        </script>
     </body>
 </html>
