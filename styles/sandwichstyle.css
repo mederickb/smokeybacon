@@ -1,10 +1,10 @@
 /*Fonts*/
-@import url('https://fonts.googleapis.com/css?family=Atkinson+Hyperlegible');
+@import url("https://fonts.googleapis.com/css?family=Atkinson+Hyperlegible");
 /*Body*/
 body {
 	background-color: #282A36;
 	color: white;
-	font-family: Atkinson Hyperlegible, Tahoma, sans-serif;
+	font-family: "Atkinson Hyperlegible", Tahoma, sans-serif;
 	margin: 0;
 	/*fixes footer*/
 	display: flex;
@@ -46,7 +46,7 @@ footer {
 	color: #6070a0;
 	padding: 0.5rem 0.5rem 0.5rem 0.5rem;
 	/*fixes footer*/
-	margin-top: auto;
+	margin-top: 3rem;
 }
 footer p {
 	padding-bottom: 1rem;
