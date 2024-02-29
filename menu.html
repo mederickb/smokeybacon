@@ -1,124 +1,129 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-.accordion {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  transition: 0.4s;
-}
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    .accordion {
+      background-color: #eee;
+      color: #444;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+      transition: 0.4s;
+    }
 
-.active, .accordion:hover {
-  background-color: #ccc;
-}
+    .active,
+    .accordion:hover {
+      background-color: #ccc;
+    }
 
-.panel {
-  padding: 0 18px;
-  background-color: white;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-}
-</style>
-<title>Smokey Bacon</title>
-<link rel="stylesheet" href="styles/style.css">
+    .panel {
+      padding: 0 18px;
+      background-color: white;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+    }
+  </style>
+  <title>Smokey Bacon</title>
+  <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
-<img id="main-image" src="images/smokey-bacon-restaurant.jpg" alt="restaurant interior">
-<div id="main-container">
-<header>
-	<a href="index.html">
-		<img src="images/logo-v.png" alt="smokey bacon logo">
-	</a>
-</header>
-<nav>
-	<a href="menu.html">Menu</a>
-	<a href="about.html">About</a>
-</nav>
+  <img id="main-image" src="images/smokey-bacon-restaurant.jpg" alt="restaurant interior">
+  <div id="main-container">
+    <header>
+      <a href="index.html">
+        <img src="images/logo-v.png" alt="smokey bacon logo">
+      </a>
+    </header>
+    <nav>
+      <a href="menu.html">Menu</a>
+      <a href="about.html">About</a>
+    </nav>
 
-<div class="content">
-<!-- Start your content here -->
+    <div class="content">
+      <!-- Start your content here -->
 
-<h2>Menu</h2>
-<p>Choose your category of food:</p>
+      <h2>Menu</h2>
+      <p>Choose your category of food:</p>
 
-<button class="accordion">APPETIZERS</button>
-<div class="panel">
-    <div>
-        <P>
-            <a href="specialty/poutine-chichen-chorizo.html">POUTINE WITH SMOKED ANCHO CHICKEN AND CHORIZO, BEER SAUCE</a>
-        </P>
-    </div>
-</div>
+      <button class="accordion">APPETIZERS</button>
+      <div class="panel">
+        <div>
+          <P>
+            <a href="specialty/poutine-chichen-chorizo.html">POUTINE WITH SMOKED ANCHO CHICKEN AND CHORIZO, BEER
+              SAUCE</a>
+          </P>
+        </div>
+      </div>
 
-<button class="accordion">SALADS</button>
-<div class="panel">
-  <p>COMING SOON..</p>
-</div>
+      <button class="accordion">SALADS</button>
+      <div class="panel">
+        <p>COMING SOON..</p>
+      </div>
 
-<button class="accordion">BURGERS AND SANDWICHES</button>
-<div class="panel">
-    <div>
-       <P>
-        <a href="specialty/breakfast-sandwich.html">BREAKFAST SANWICH</a>
-    </P>
-    </div>
-</div>
+      <button class="accordion">BURGERS AND SANDWICHES</button>
+      <div class="panel">
+        <div>
+          <P>
+            <a href="specialty/breakfast-sandwich.html">BREAKFAST SANWICH</a>
+          </P>
+        </div>
+      </div>
 
-<button class="accordion">MEAT AND FISH</button>
-<div class="panel">
-    <div>
-        <p>
+      <button class="accordion">MEAT AND FISH</button>
+      <div class="panel">
+        <div>
+          <p>
             <a href="specialty/bacon-wrapped-chicken.html">CHICHEN WRAPPED IN BACON</a>
-        </p>
-    </div>
-</div>
+          </p>
+        </div>
+      </div>
 
-<button class="accordion">NOODLES AND PIZZAS</button>
-<div class="panel">
-    <div>
-        <p>
+      <button class="accordion">NOODLES AND PIZZAS</button>
+      <div class="panel">
+        <div>
+          <p>
             <a href="specialty/carbonara.html">CARBONARA</a>
-        </p>
+          </p>
+        </div>
+      </div>
+
+      <button class="accordion">DESSERTS</button>
+      <div class="panel">
+        <div>
+          <p>
+            <a href="specialty/spicy-margarita.html">SPICY MARGARITA</a>
+          </p>
+        </div>
+      </div>
+
+      <!-- End of your content -->
     </div>
-</div>
 
-<button class="accordion">DESSERTS</button>
-<div class="panel">
-  <div>
-    <p>
-        <a href="specialty/spicy-margarita.html">SPICY MARGARITA</a>
-    </p>
-</div>
-</div>
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
 
-<!-- End of your content -->
-</div>
-
-<script>
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
-  });
-}
-</script>
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
 
 </body>
+
 </html>
