@@ -68,37 +68,81 @@
 <div class="content">
 <!-- Start your content here -->
 
+
 <h2>Menu</h2>
 <p>Choose your category of food:</p>
 
-<button class="accordion">APPETIZERS</button>
+<button class="accordion">SNACKS & APPETIZERS</button>
 <div class="panel">
     <div>
         <P>
             <a href="specialty/poutine-chichen-chorizo.html">POUTINE WITH SMOKED ANCHO CHICKEN AND CHORIZO, BEER SAUCE</a>
+            <dl>
+              <dt>DIJON-BACON DIP FOR PRETZELS	        5.69</dt>
+              <dd>dijon mustard, crumbled cooked bacon, horseradish and pretzel crisps</dd>
+              <dt>BLT Muffins				4.99</dt>
+              <dd>crumbled cooked bacon, chopped seeded plum tomatoes, fresh parsley, shredded lettuce</dd>
+              <dt>BLT TWICE-BAKED POTATOES			7.89</dt>
+              <dd>potatoes, shredded cheddar cheese, bacon strips, cooked and crumbled, tomatoes, onion, lettuce, mayonnaise</dd>
+              <dt>BACON CREAM CHEESE PINWHEELS		6.78</dt>
+              <dd>cream cheese, softened, onion, milk, bacon strips, crescent rolls</dd>
+              <dt>CORNFLAKE-COATED CRISPY BACON		5.89</dt>
+              <dd>evaporated milk, ketchup, worcestershire sauce,, bacon strips, crushed cornflakes</dd>
+          </dl>
         </P>
     </div>
 </div>
 
-<button class="accordion">SALADS</button>
+<button class="accordion">SOUPS & SALADS</button>
 <div class="panel">
-  <p>COMING SOON..</p>
+  <p>
+    <dl>
+    <dt>BACON AVOCADO SALAD			6.99</dt>
+    <dd>red wine vinegar, bacon strips, cooked and crumbled, ripe avocados, peeled and cubed, lemon juice, olive oil</dd>
+    <dt>BACON-POTATO CORN CHOWDER			5.69</dt>
+    <dd>pound bacon strips, chopped, chopped onion, Yukon Gold potatoes, milk, cream-style corn</dd>
+    <dt>CRUNCHY BACON BLUE CHEESE			7.65</dt>
+    <dd>red onions, avocado oil, sweet red pepper, balsamic vinegar,, crumbled cooked bacon, salt</dd>
+    <dt>CRUNCHY LEMON-PESTO GARDEN SALAD		6.79</dt>
+    <dd>Pesto, lemon juice, garlic salt, fresh peas, bacon strips,Parmesan cheese</dd>
+    <dt>BACON-BEEF BARLEY SOUP			8.67</dt>
+    <dd>bacon strips, beef stew meat, red potatoes, onion, pearl barley, baby carrots, mashed potato, beef</dd>
+</dl>
+</p>
 </div>
 
-<button class="accordion">BURGERS AND SANDWICHES</button>
+<button class="accordion">SANDWICHES</button>
 <div class="panel">
     <div>
        <P>
         <a href="specialty/breakfast-sandwich.html">BREAKFAST SANWICH</a>
-    </P>
+        <dt>GRILLED CHEESE BACON AND TOMATO SANDWICH 8.94</dt>
+        <dd>sourdough bread, cheddar cheese, gruyere cheese, onion powder, roasted tomatoes, glazed bacon, and mayonnaise.</dd>
+        <dt>BACON SANDWICH WITH CARAMELIZED ONIONS	9.69</dt>
+        <dd>chipotle mayonnaise, caramelized onions, tomatoes, arugula, bacon</dd>
+        <dt>BACON FISH SANDWICH	7.97</dt>
+        <dd>black pepper, cooked bacon, tilapia fillets, tomato, lettuce</dd>
+      </P>
     </div>
 </div>
 
-<button class="accordion">MEAT AND FISH</button>
+<button class="accordion">RICE AND PASTA</button>
 <div class="panel">
     <div>
         <p>
             <a href="specialty/bacon-wrapped-chicken.html">CHICHEN WRAPPED IN BACON</a>
+            <dl>
+              <dt>BACON-WRAPPED STUFFED CHICKEN		9.89</dt>
+              <dd>skinless chicken breast, spreadable chive and onion cream cheese, bacon strips, butter,  brown rice</dd>
+              <dt>BACON WITH RICE		9.69</dt>
+              <dd>bacon, white onion, white rice, sesame oil, soy sauce, green onions, eggs</dd>
+              <dt>BACON CARBONARA PASTA			11.19</dt>
+              <dd>italian classic with creamy sauce, crisp bacon, peas, & parmesan</dd>
+              <dt>GARLIC BACON PASTA		12.69</dt>
+              <dd>crispy bacon, garlic, creamy sauce, red wine, Italian pasta</dd>
+              <dt>ORZO WITH BUTTERNUT SQUASH & BACON		13.59</dt>
+              <dd>orzo pasta, bacon strips, chopped, butternut squash, frozen green beans, thawed, Parmesan cheese, garlic, pepper and salt</dd>
+          </dl>
         </p>
     </div>
 </div>
@@ -117,11 +161,20 @@
   <div>
     <p>
         <a href="specialty/spicy-margarita.html">SPICY MARGARITA</a>
+        <dl>
+          <dt>BACON-WRAPPED AVOCADO WEDGES		7.39</dt>
+          <dd>ripe avocados, bacon strips, lime juice, Sriracha chili sauce</dd>
+          <dt>ORANGE-GLAZED BACON			6.54
+          <dd>orange juice, honey, dijon mustard, ground ginger, acon strips</dd>
+          <dt>MAPLE BACON WALNUT COFFEE CAKE		8.59</dt>
+          <dd>brown sugar, ground cinnamon, unsweetened applesauce, eggs, bacon strips, cooked and crumbled</dd>
+          <dt>BACON-WRAPPED SCALLOPS with PEAR SAUCE	6.49</dt>
+          <dd>pear preserves, bacon strips, reduced-sodium soy sauce, brown sugar, crushed red pepper flakes, sea scallops</dd>
+          <dt>BACON PARMESAN POPOVERS			5.68</dt>
+          <dd>Parmesan cheese, bacon strips, diced, milk, eggs</dd>
+      </dl>
     </p>
 </div>
-</div>
-
-<!-- End of your content -->
 </div>
 
 <script>
@@ -141,33 +194,5 @@ for (i = 0; i < acc.length; i++) {
 }
 </script>
 
-<!-- make a modal -->
-<script>
-  // Get the modal
-  var modal = document.getElementById("myModal");
-  
-  // Get the button that opens the modal
-  var btn = document.getElementById("myBtn");
-  
-  // Get the <span> element that closes the modal
-  var span = document.getElementsByClassName("close")[0];
-  
-  // When the user clicks the button, open the modal 
-  btn.onclick = function() {
-    modal.style.display = "block";
-  }
-  
-  // When the user clicks on <span> (x), close the modal
-  span.onclick = function() {
-    modal.style.display = "none";
-  }
-  
-  // When the user clicks anywhere outside of the modal, close it
-  window.onclick = function(event) {
-    if (event.target == modal) {
-    modal.style.display = "none";
-    }
-  }
-</script>
 </body>
 </html>
