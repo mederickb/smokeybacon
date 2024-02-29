@@ -43,14 +43,18 @@ header img { /* logo */
 }
 
 nav {
-	padding:30px;
+	padding: 20px;
 	background-color: ghostwhite;
 	text-align: center;
 	position: -webkit-sticky; /* Safari */
-	position: sticky;
-	top: 0;
+	position: sticky; /* Stick the nav */
+	top: 0; /* to the top */
+	z-index: 1; /* Keep it on top layer */
 }
 nav a { /* Style nav buttons */
+	position: relative;
+	display: inline-flex;
+	margin-top: 5px;
 	text-decoration: none;
 	font-size: 1.8em;
 	padding: 1vh 2vh; /* size vs viewport */
