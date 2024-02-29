@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Cabin&display=swap');
 
 body {
-	margin: 0 auto;
-	/* Remove any white space around the page */
+	margin: 0 auto; /* Remove any white space around the page */
 	background-color: ghostwhite;
 	font-family: "Cabin", sans-serif;
 }
@@ -12,7 +11,6 @@ h1 {
 	font-family: serif;
 	font-size: 2.5em;
 }
-
 h2 {
 	font-size: 1.8em;
 }
@@ -26,53 +24,33 @@ h2, h4 {
 #main-image {
 	float: left;
 	width: 40%;
-	height: 100vh;
-	/* Full vertical length */
-	object-fit: cover;
-	/* Crop the image without distortion */
+	height: 100vh; /* Full vertical length */
+	object-fit: cover; /* Crop the image without distortion */
 	object-position: left;
 }
 
 #main-container {
-<<<<<<< HEAD
-	height: 100vh;
-	/* Full vertical length */
-	overflow-y: auto;
-	/* Scroll if content too long */
-=======
 	height: 100vh; /* Full vertical length */
 	overflow-y: scroll; /* Scroll if content too long */
->>>>>>> 9b25505aa98d2f422758618afab0b34f6ab60a94
 }
 
 header {
 	text-align: center;
 }
-<<<<<<< HEAD
-
-header img {
-	/* logo */
-	padding: 30px;
-	width: 40%;
-=======
 header img { /* logo */
 	padding: 15px;
 	width: 40vh;
->>>>>>> 9b25505aa98d2f422758618afab0b34f6ab60a94
 }
 
 nav {
-	padding: 30px;
+	padding:30px;
 	background-color: ghostwhite;
 	text-align: center;
-	position: -webkit-sticky;
-	/* Safari */
+	position: -webkit-sticky; /* Safari */
 	position: sticky;
 	top: 0;
 }
-
-nav a {
-	/* Style nav buttons */
+nav a { /* Style nav buttons */
 	text-decoration: none;
 	font-size: 1.8em;
 	padding: 1vh 2vh; /* size vs viewport */
@@ -80,7 +58,6 @@ nav a {
 	border-width: 2px;
 	color: #aa2400;
 }
-
 nav a:hover {
 	background-color: #bc7133;
 	border-color: #bc7133;
@@ -103,20 +80,14 @@ nav a:hover {
 	text-align: center;
 	padding-top: 20px;
 }
-
-.exterior-container img {
+.exterior-container img { 
 	margin-bottom: 10px;
-	object-fit: cover;
-	/* Crop image without distortion */
+	object-fit: cover; /* Crop image without distortion */
 	object-position: 0 30%;
 	height: 200px;
 	width: 600px;
 }
 
-<<<<<<< HEAD
-.hours-container p {
-	margin: 3px 0;
-=======
 /*.hours-container {
 	text-align: center;
 	width: 600px;
@@ -155,5 +126,4 @@ nav a:hover {
 
 #team-cards img:hover {
 	filter: grayscale(0%);
->>>>>>> 9b25505aa98d2f422758618afab0b34f6ab60a94
 }
