@@ -199,3 +199,11 @@ nav a:hover {
 #team-cards img:hover {
 	filter: grayscale(0%);
 }
+
+
+/* Modal content */
+
+.modal-content {
+	width: 40%;
+	text-align: center;
+}
