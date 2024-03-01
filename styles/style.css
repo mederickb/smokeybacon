@@ -17,6 +17,7 @@ h2 {
 }
 h5 {
 	font-style: italic;
+	font-size: 0.9em;
 }
 h2, h4 {
 	color: #bc7133;
@@ -74,10 +75,6 @@ nav a:hover {
 	padding: 10px 25px;
 	width: 65%;
 	text-align: center;
-	/*border-style: dotted;
-	border-width: 5px;
-	border-color: red;
-	background-color: red;*/
 }
 
 
