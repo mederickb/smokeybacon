@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Cabin&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cabin|Leckerli One&display=swap');
 
 body {
 	margin: 0 auto; /* Remove any white space around the page */
@@ -8,14 +8,16 @@ body {
 
 h1 {
 	color: #aa2400;
-	font-family: serif;
-	font-size: 2.5em;
+	font-family: "Leckerli One", serif;
+	font-size: 3.125em;
 }
 h2 {
 	font-size: 1.8em;
+	font-family: "Cabin", sans-serif;
 }
 h5 {
 	font-style: italic;
+	font-size: 0.9em;
 }
 h2, h4 {
 	color: #bc7133;
@@ -43,14 +45,18 @@ header img { /* logo */
 }
 
 nav {
-	padding:30px;
+	padding: 20px;
 	background-color: ghostwhite;
 	text-align: center;
 	position: -webkit-sticky; /* Safari */
-	position: sticky;
-	top: 0;
+	position: sticky; /* Stick the nav */
+	top: 0; /* to the top */
+	z-index: 1; /* Keep it on top layer */
 }
 nav a { /* Style nav buttons */
+	position: relative;
+	display: inline-flex;
+	margin-top: 5px;
 	text-decoration: none;
 	font-size: 1.8em;
 	padding: 1vh 2vh; /* size vs viewport */
@@ -66,46 +72,112 @@ nav a:hover {
 
 .content {
 	margin: 25px auto;
-	width: 80%;
-	/*border-style: dotted;
-	border-width: 5px;
-	border-color: red;*/
+	padding: 10px 25px;
+	width: 65%;
+	text-align: center;
 }
 
-/* Custom content */
 
 /* index.html */
+
+#business-container {
+	margin: 50px;
+	background-color: #aa2400;
+}
+
+#contact-info {
+	float: left;
+	width: 50%;
+}
 
 .address-container {
 	text-align: center;
 	padding-top: 20px;
 }
+
 .exterior-container img { 
 	margin-bottom: 10px;
+	max-width: 100%; /* Make the image responsive */
 	object-fit: cover; /* Crop image without distortion */
 	object-position: 0 30%;
 	height: 200px;
 	width: 600px;
 }
 
-/*.hours-container {
-	text-align: center;
-	width: 600px;
-	margin: 25px auto;
-}*/
-.hours-container h2 {
-	/*float:left;*/
-	padding: 15px;
+.map-container iframe {
+	max-width: 100%; /* Make the google maps responsive */
 }
-.hours-container p {
-	margin: 0;
+
+
+/* menu.html */
+
+.accordion {
+	background-color: #eee;
+	color: #444;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 15px;
+	transition: 0.4s;
+}
+
+.active, .accordion:hover {
+	background-color: #ccc;
+}
+
+#specialties li {
+	display: inline-block;
+	margin: 5px;
+	padding: 5px;
+	width: 200px;
+	text-align: left;
+	vertical-align: top;
+}
+#specialties li img {
+	object-fit: cover; /* Crop image without distortion */
+	object-position: center;
+	height: 200px;
+	width: 200px;
+}
+.panel {
+	padding: 0 18px;
+	background-color: white;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+}
+.panel ul, #specialties ul {
+	list-style-type: none;
 	padding: 10px;
-	/*background-color: rgba(170,36,0, 0.75);*/
-	/*color: ghostwhite;*/
-	font-size: 1.3em;
 	text-align: left;
 }
+#specialties ul {
+	text-align: center;
+}
+.panel li {
+	display: inline-block;
+	margin: 10px;
+	padding: 5px;
+	width: 300px;
+	text-align: left;
+	vertical-align: top;
+}
+.panel li img {
+	object-fit: cover; /* Crop image without distortion */
+	object-position: center;
+	height: 300px;
+	width: 300px;
+}
+.panel li p, #specialties li p {
+	text-transform: lowercase;
+}
+
+
 /* about.html */
+
 #team-cards {
 	text-align: center;
 }
@@ -126,4 +198,12 @@ nav a:hover {
 
 #team-cards img:hover {
 	filter: grayscale(0%);
+}
+
+
+/* Modal content */
+
+.modal-content {
+	width: 40%;
+	text-align: center;
 }

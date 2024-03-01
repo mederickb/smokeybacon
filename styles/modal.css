@@ -66,3 +66,47 @@
 	padding: 10px 16px;
 	background-color: #eee;
   }
+
+.mainimg {
+	box-shadow: 5px 5px 2px black;
+	border-radius: 10px;
+	margin-top: 10px;
+}
+
+body {
+	background-color: ghostwhite;
+	font-family: "Cabin", sans-serif;
+}
+
+h1 {
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	color: #aa2400;
+	font-size: 2.5em;
+}
+
+h2 {
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-size: 1.8em;
+	color:#bc7133;
+}
+
+#my-image {
+	opacity: 0;
+	transition: opacity 1s; 
+}
+
+#my-image:hover {
+	opacity: 1;
+}
+
+.button {
+	background-color: #bc7133;;
+	text-decoration: none;
+	color: white;
+	padding: 5px 5px;
+    border-radius: 10px;
+}
+
+a.button:hover {
+	background-color: #aa2400;
+}
