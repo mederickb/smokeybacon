@@ -85,23 +85,9 @@ nav a:hover {
 	background-color: #aa2400;
 }
 
-#hours-container {
-	float: left;
-	/*text-align: center;*/
-	width: 50%;
-}
-#hours-container p {
-	/*margin: 0;*/
-	/*padding: 10px;*/
-	background-color: rgba(170,36,0, 0.75);
-	/*color: ghostwhite;*/
-	/*font-size: 1.3em;*/
-}
-
 #contact-info {
 	float: left;
 	width: 50%;
-	/*text-align: center;*/
 }
 
 .address-container {
